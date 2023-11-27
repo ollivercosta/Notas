@@ -65,10 +65,8 @@ h2::before {
     content: '➤ ' ;
 }
 
-
-
-h4::before {
-    content: '➤ ' ;
+.escondidas p::before {
+    content: '◉ ' ;
 }
 
 hr {
@@ -174,6 +172,18 @@ h3:hover {
 h4 {
     margin-bottom: 20px;
 }
+
+#ex5 p {
+    line-height: 22px;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+#ex6 li {
+    line-height: 22px;
+     
+}
+
 
 
 
