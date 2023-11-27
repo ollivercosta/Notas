@@ -3,85 +3,485 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="estilo/style.css">
-    <title>Como surgiu o mascote do Android?</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../Notas/midia/favicon.png" type="image/x-icon">
+    <title>Notas</title>
+    <style>
+        /* Defina inicialmente a lista para não ser exibida */
+        .escondidas {
+            margin-top: 40px;
+            display: none;
+            opacity: 80%;
+            max-height: 0;
+            overflow: hidden;
+           
+            list-style-type: none;
+            max-width: 700px;
+            min-width: 500px;
+        }
+
+        .escondidas.mostrar {
+            
+            max-height: 1000px; /* Um valor suficientemente grande */
+        }
+
+        .escondidas p {
+            color: rgb(0, 48, 48);
+            
+        }
+
+        .imenu:hover {
+            background-color: rgba(232, 232, 233, 0.418);
+            padding: 5px 8px;
+            box-sizing: border-box;
+            transition-duration: 1s;
+            border-radius: 5px;
+            color: rgb(2, 201, 201);
+            box-shadow: 1px 1px 3px rgba(0, 139, 139, 0.432);
+        }
+        
+    </style>
     
 </head>
 <body>
     <header>
-        <h1>Curiosidades de Tecnologia</h1>
-        <p>Tudo aquilo que você sempre quis saber sobre o mundo Tech, em um único lugar</p>
+        
+        <h1>Desafios</h1>
+        <p>Desafios do Curso em Vídeo - HTML e CSS</p>
     </header>
-    <nav>
-        <a id="home" href="#">Home</a>
-        <a id="noticias" href="#">Notícias</a>
-        <a id="fale" href="#">Contato</a>
-    </nav>
+
     <main>
-        <article>
-            <h1>História do Mascote do Android</h1>
 
-            <p>Provavelmente você sabe que o sistema operacional <strong>Android</strong>, mantido pelo <strong>Google</strong> é um dos mais utilizados para dispositivos móveis em todo o mundo. Mas tavez você não saiba que o seu simpático mascote tem um nome e uma história muito curiosa? Pois acompanhe esse artigo para aprender muita coisa sobre esse robozinho.</p>
 
-            <h2>A primeira versão</h2> 
+        <!--PARTE DIRECIONADA AO SUMÁRIO------------------------------------------------------------------->
+        <section class="menu" id="menu">
+            <h2>Sumário</h2>
+            <a onclick="toggleLista()" class="imenu">&#9660; Menu</a></p>
+                <!-------------------MÓDULO 01---------------------------->
+            <ul class="escondidas">
+                <p><a href="#ass1">Desafios - 01 Modulo</a></p> <br>
 
-            <p>A primeira tentativa de criar um mascote surgiu em 2007 e veio de um desenvolvedor chamado <a href="https://androidcommunity.com/dan-morrill-shows-us-the-android-mascot-that-almost-was-20130103/" target="_blank" class="externo">Dan Morrill</a>. Ele conta que abriu o <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjOjPbT5smCAxUhD7kGHR9yCn8QFnoECAYQAQ&url=https%3A%2F%2Finkscape.org%2Fpt-br%2F&usg=AOvVaw0arg7pGsiWX6diMGF17AZ3&opi=89978449" target="_blank" class="externo">Inkscape</a> (software livre para vetorização de imagens) e criou sua própria versão de robô. O objetivo era apenas personificar o sistema apenas para a a sua equipe, não existia nenhuma solicitação da empresa para a criação de um mascote.</p>
+                <li> <a href="#ass1">Desafio 01 - Desafio da Mensagem</a></li> <br>
+                <li> <a href="#ass2">Desafio 02 - Desafio da Imagem</a></li> <br>
+                <li> <a href="#ass3">Desafio 03 - Desafio do Mapa</a></li> <br>
+                <li> <a href="#ass4">Desafio 04 - Desafio Emojis Favoritos</a></li> <br>
+                <li> <a href="#ass5">Desafio 05 - Desafio Meu Perfil Social</a></li> <br>
+                <li> <a href="#ass6">Desafio 06 - Desafio Tags em HTML</a></li> <br>
+                <li> <a href="#ass7">Desafio 07 - Desafio Imagem Flexível</a></li> <br>
+                <li> <a href="#ass8">Desafio 08 - Desafio da Navegação</a></li> <br>
+                <li> <a href="#ass9">Desafio 09 - Desafio Seus Vídeos Favofitos</a></li> <br>
+                
+                <!-------------------MÓDULO 02---------------------------->
 
-            <picture>
-                <source media="(max-width: 670px)" srcset="imagens/dan-droids-pq.png">
-                <img src="imagens/dan-droids.png" alt="primeiro mascote do andrid">
-            </picture>
+                <p><a href="#ass11">Desafios - 02 Modulo</a></p> <br>
 
-            <p>Essa primeira versão bizarra até foi batizada em homenagem ao seu criador: seriam os <strong>Dandroids</strong>.</p>
+                <li> <a href="#ass11">Desafio 01 - Desafio Site do Android</a></li> <br>
+                <li> <a href="#ass12">Desafio 02 - Desafio do Astronauta</a></li> <br>
+                <li> <a href="#ass13">Desafio 03 - Desafio Site do Cordel</a></li> <br>
 
-            <h2>Surge um novo mascote</h2>
+                <!-------------------MÓDULO 03---------------------------->
 
-            <p>A ideia de ter um mascote foi amadurecendo e a missão foi passada para uma profissional da área. A ilustradora Russa <a href="https://www.irinablok.com" target="_blank" class="externo">Irina Blok</a>, também funcionária do Google, ficou com a missão de representar o pequeno robô de uma maneira mais agradável.</p>
+                <p><a href="">Desafios - 03 Modulo</a></p> <br>
+                <div style="padding-left: 70px;">Sem Desafio</div> <br>
 
-            <picture>
-                <source media="(min-width: 670px)" srcset="imagens/irina-blok.jpg">
-                <img src="imagens/irina-blok-pq.jpg" alt="Irina blok"></picture>
+                <!-------------------MÓDULO 04---------------------------->
 
-            <p>A ideia principal da Irina era representar tudo graficamente com poucos traços e de forma mais chapada. O desenho também deveria gerar identificação rápida com quem o olha. Surgiu então o Bugdroid, o novo mascote do <strong>Android</strong>.</p>
+                <p><a href="#ass14">Desafios - 04 Modulo</a></p> <br>
+                <li> <a href="#ass14">Desafio 01 - Desafio Redes Sociais</a></li> <br>
 
-            <img src="imagens/bugdroid.png" class="pequena" alt="Novo mascote do android">
+                <!-------------------EXERCÍCIOS---------------------------->
 
-            <p>A principal inspiração para os traços do novo <strong>Bugdroid</strong> veio daqueles bonequinhos que ilustram portas de banheiro para indicar o gênero de cada porta. Conta a lenda que a artista estava criando em sua mesa no escritório do <strong>Google</strong> e olhou para o lado dos banheiros e a identificação foi imediata: simples, limpo, objetivo.</p>
+               
+            </ul>
+        
+            <script>
+                function toggleLista() {
+                    var lista = document.querySelector('.escondidas');  lista.classList.toggle('mostrar')
+                    lista.style.display = (lista.style.display === 'none' || lista.style.display === '') ? 'block' : 'none';
+                }
+            </script>
+        </section>
+       
+        </section>
+        <!--AQUI ACABA A PARTE DIRECIONADA AO SUMÁRIO------------------------------------------------------>
 
-            <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/l2UDgpLz20M?si=YDHF-D5Tnek71uca&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+
+
+<hr>
+
+        <!--INÍCIO DESAFIO 01 MÓDULO 01------------------------------------------------- -->
+        <section class="descri" id="ass1">
+           <ul type="circle">
+               <li>
+                   <h3>Desafio 001 - Módulo 01</h3>
+               </li>
+           </ul>
+            <div class="fundex">
+                <h4>Desafio da Mensagem</h4>
+                <p>* Um</p>
+                <p>** Dois</p>
+                <p>*** Três</p>
+                <p>**** Quatro</p> <br>
+                <p>**** Quatro</p>
+                <p>*** Três</p>
+                <p>** Dois</p>
+                <p>* Um</p>
+            </div>
+
+            <div class="contorno">
+                <h4>Proposta:</h4>
+                <p>Criar um código HTML que use apenas parágrafos e quebra de linhas.</p>
+            </div> <br>
+            <p class="voltar"><a href="#menu"> &#9650; Voltar ao Menu</a></p>
+        </section>
+        <!--FIM DO DESAFIO-------------------------------------------------------------- -->
+
+<hr>
+        <!--INÍCIO DESAFIO 02 MÓDULO 01------------------------------------------------- -->
+        <section class="descri" id="ass2">
+            <ul type="circle">
+                <li>
+                    <h3>Desafio 002 - Módulo 01</h3>
+                </li>
+            </ul>
+             <div class="fundex">
+                <h4>Desafio da Imagem</h4>
+                <p>Inserir uma imagem é muito simples, tanto no conteúdo quanto lá em cima como ícone de favoritos!</p> <br>
+                <img src="../Notas/midia/github-m.png" alt="Imagem-github"> 
+             </div>
+ 
+             <div class="contorno">
+                 <h4>Proposta:</h4>
+                 <p>Criar uma página que tenha duas imagens: uma no conteúdo da página e um ícone de favoritos.</p>
+             </div> <br>
+             <p class="voltar"><a href="#menu"> &#9650; Voltar ao Menu</a></p>
+         </section>
+        <!--FIM DO DESAFIO-------------------------------------------------------------- -->
+<hr>
+
+        <!--INÍCIO DESAFIO 03 MÓDULO 01------------------------------------------------- -->
+        <section class="descri" id="ass3">
+            <ul type="circle">
+                <li>
+                    <h3>Desafio 003 - Módulo 01</h3>
+                </li>
+            </ul>
+             <div class="fundex">
+                <h4>Desafio do Mapa</h4>
+                <p>Chegou a hora de treinar um pouco o uso de imagens, parágrafos e quebras de linhas.</p> <br>
+                <img src="../Notas/midia/d3/mapa001.png" alt=""> 
+                <img src="../Notas/midia/d3/mapa002.png" alt=""> 
+                <img src="../Notas/midia/d3/mapa003.png" alt=""> <br>
+                <img src="../Notas/midia/d3/mapa004.png" alt=""> 
+                <img src="../Notas/midia/d3/mapa005.png" alt=""> 
+                <img src="../Notas/midia/d3/mapa006.png" alt=""> <br>
+                <img src="../Notas/midia/d3/mapa007.png" alt=""> 
+                <img src="../Notas/midia/d3/mapa008.png" alt=""> 
+                <img src="../Notas/midia/d3/mapa009.png" alt=""> 
+             </div>
+ 
+             <div class="contorno">
+                 <h4>Proposta:</h4>
+                 <p>Montar o mapa utilizando as imagens disponibilizadas. As imagens estão com os nomes trocados, organize e monte o mapa.</p>
+             </div> <br>
+             <p class="voltar"><a href="#menu"> &#9650; Voltar ao Menu</a></p>
+         </section>
+        <!--FIM DO DESAFIO-------------------------------------------------------------- -->
+
+<hr>
+        <!--INÍCIO DESAFIO 04 MÓDULO 01------------------------------------------------- -->
+        <section class="descri" id="ass4">
+            <ul type="circle">
+                <li>
+                    <h3>Desafio 004 - Módulo 01</h3>
+                </li>
+            </ul>
+             <div class="fundex">
+               <h4>Desafio Emojis Favoritos</h4>
+               <p>Meus emojis favoritos</p> <br>
+               <ul id="ex4">
+                <h4>Carinhas</h4>
+
+                <li>😊 Código U+1F60A</li>
+                <li>🙃 Código U+1F643</li>
+                <li>🙄 Código U+1F644</li> <br>
+
+                <h4>Mãos</h4>
+
+                <li>✋ Código U+270B</li>
+                <li>🤞 Código U+1F91E</li>
+                <li>✌️ Código U+270C U+FE0F</li> <br>
+
+                <h4>Animais</h4>
+
+                <li>🦊 Código U+1F98A</li>
+                <li>🦉 Código U+1F989</li>
+                <li>🐶 Código U+1F436</li> <br>
+               </ul>
+             </div>
+ 
+             <div class="contorno">
+                 <h4>Proposta:</h4>
+                 <p>Criar um código HTML que use apenas parágrafos e quebra de linhas.</p>
+             </div> <br>
+             <p class="voltar"><a href="#menu"> &#9650; Voltar ao Menu</a></p>
+         </section>
+        <!--FIM DO DESAFIO-------------------------------------------------------------- -->
+<hr>
+
+        <!--INÍCIO DESAFIO 05 MÓDULO 01------------------------------------------------- -->
+        <section class="descri" id="ass5">
+            <ul type="circle">
+                <li>
+                    <h3>Desafio 005 - Módulo 01</h3>
+                </li>
+            </ul>
+             <div class="fundex">
+                 <h4>Desafio Meu Perfil Social</h4> <br>
+                 <h4 style="font-size: 20px;">Minhas Redes Sociais</h4>
+                 <h4>Quem sou eu?</h4>
+                 <img src="../Notas/midia/d5/josa01.png" alt=""> 
+
+                 <div id="ex5">
+                     <p>Idealizador dos projetos <strong>Ensaio Aberto</strong> e do <strong>Festival em Casa</strong> em 2020, que contou com a participação de mais de 70 artistas, entre Brasileiros e Argentinos.
+                        <br> Como educador musical realizou oficinas na cidade de Teixeira de Freitas de Composição e Iniciação Musical. Como professor de Violão e Ukulele, lecionou na <strong>Escola de Música Villa Lobos</strong>.
+                        <br>  Participou, pela <strong>UFBA</strong>, do <strong>PIBID</strong>, atuando em escolas da periferia de Salvador. <br>
+                          Atualmente atua como professor particular de música, estagiário na Tabuleiro Produções, além de apresentações ao vivo na cidade e região com as bandas <strong>ForróZévixe</strong> e a <strong>Zambiacuca</strong>.</p>
+                 </div>
+                 <h4>Como falar comigo?</h4>
+
+                 <ul>
+                    <li><img src="../Notas/midia/d5/icone-instagram.png" alt="Instagram"><a href="https://www.instagram.com/josaholliveira/" target="_blank"> - Instagram</a> - Siga | Curta | Compartilhe.</li>
+                    <li><img src="../Notas/midia/d5/icone-facebook.png" alt="Facebook"><a href="https://web.facebook.com/josafa.costa/" target="_blank"> - Facebook</a> - Fique por dentro de tudo!</li>
+                    <li><img src="../Notas/midia/d5/icone-youtube.png" alt="youtube"><a href="https://www.youtube.com/channel/UCa-O6Cyi76IwCSmI4Er8cAA" target="_blank"> - youtube</a> - Assista e Compartilhe nosso vídeos.</li>
+                 </ul>
             
-            <aside>
-                <h3>Quer aprender mais?</h3>
-                <p>Outro assunto curioso em relação ao Android é que cada versão sempre foi nomeada em homenagem a um doce, em ordem alfabética a partir da versão 1.5 até a 9.0.</p>
-                <ul>
-                    <li>1.5 - <abbr title="Bolo de Copo">Cupcake</abbr></li>
-                    <li>1.6 - <abbr title="Rosquinha">Donut</abbr></li>
-                    <li>3.0 - <abbr title="Bomba">Eclair</abbr></li>
-                    <li>2.2 - <abbr title="Iogurte Congelado">Froyo</abbr></li>
-                    <li>2.3 - <abbr title="Biscoito de Gengibre">Gingerbread</abbr></li>
-                    <li>3.0 - <abbr title="Favo de Mel">Honeycomb</abbr></li>
-                    <li>4.0 - <abbr title="Sanduíche de Sorvete">Ice Cream Sandwich</abbr></li>
-                    <li>4.1 - <abbr title="Jujuba">Jelly Bean</abbr></li>
-                    <li>4.4 - <abbr title="Kitkat">KitKat</abbr></li>
-                    <li>5.0 - <abbr title="Pirulito">Lolipop</abbr></li>
-                    <li>6.0 - <abbr title="Marshmallow">Marshmallow</abbr></li>
-                    <li>7.0 - <abbr title="Torrone">Nougat</abbr></li>
-                    <li>8.0 - <abbr title="Oreo">Oreo</abbr></li>
-                    <li>9.0 - <abbr title="Torta">Pie</abbr></li>
+             </div>
+ 
+             <div class="contorno">
+                 <h4>Proposta:</h4>
+                 <p>Criar uma página que divulgue suas redes sociais. O exercício deverá conter uma foto, uma breve descrição e os links para os perfis das redes sociais</p>
+             </div> <br>
+             <p class="voltar"><a href="#menu"> &#9650; Voltar ao Menu</a></p>
+         </section>
+        <!--FIM DO DESAFIO-------------------------------------------------------------- -->
+
+<hr>
+        <!--INÍCIO DESAFIO 06 MÓDULO 01------------------------------------------------- -->
+        <section class="descri" id="ass6">
+            <ul type="circle">
+                <li>
+                    <h3>Desafio 006 - Módulo 01</h3>
+                </li>
+            </ul>
+             <div class="fundex">
+                <h4>Tags em HTML</h4>
+                <p>Em HTML5, podemos inserir os elementos da lista a seguir. Passe o mouse sobre os termos para descobrir qual a tag deverá utilizar em cada caso.</p> <br>
+
+                <ul id="ex6">
+                    <li><abbr title="Use a tag <p>">Parágrafo</abbr></li>
+                    <li><abbr title="Use as tags <h1>, <h2>, <h3>, <h4>, <h5> e <h6>">Títulos</abbr></li>
+                    <li><abbr title="Use a tag <img>">Imagens</abbr></li>
+                    <li><abbr title="Use a tag <abbr>">Abreviações</abbr></li>
+                    <li><abbr title="Use a tag <code>">Códigos-fonte</abbr></li>
+                    <li><abbr title="Use a tag <ol>">Lista numerada</abbr></li>
+                    <li><abbr title="Use a tag <ul>">Lista com demarcadores</abbr></li>
                 </ul>
-                <p>Infelizmente, o <strong>Android Q</strong> não existiu, pois o Google resolveu pôr fim a essa divertida prática e começou a usar numerações, o que deu origem ao Android 10.</p>
+                 
+             </div>
+ 
+             <div class="contorno">
+                 <h4>Proposta:</h4>
+                 <p>Criar uma lista de coisas que podem ser adicionadas em uma página, e o desafio é; ao passar o mouse sobre a palavra, deve mostrar qual a tag que corresponde a palavra.</p>
+             </div> <br>
+             <p class="voltar"><a href="#menu"> &#9650; Voltar ao Menu</a></p>
+         </section>
+        <!--FIM DO DESAFIO-------------------------------------------------------------- -->
+<hr>
 
-                <p>Acesse aqui o site <a href="https://www.android.com/intl/en_uk/history/" target="_blank" class="externo">Android History</a> para conhecer a sequência das versões "adocicadas" e o que cada uma trouxe para o sistema Android.</p>
-            </aside>
-            
+        <!--INÍCIO DESAFIO 07 MÓDULO 01------------------------------------------------- -->
+        <section class="descri" id="ass7">
+            <ul type="circle">
+                <li>
+                    <h3>Desafio 007 - Módulo 01</h3>
+                </li>
+            </ul>
+             <div class="fundex">
+                <h4>Desafio Imagem Flexível</h4>
+                <p>
+                    
+                    Você está vendo a imagem completa? Experimente ampliar o tamanho da sua janela para aproveitar a melhor experiência. 😊
+                </p> <br>
+                <picture>
+                    <!-- Versão "m" para resoluções até 260px -->
+                    <source media="(max-width: 600px)" srcset="../Notas/midia/d8/paisagem-p.png" >
+                
+                    <!-- Versão "p" para resoluções abaixo de 260px -->
+                    <source media="(max-width: 900px)" srcset="../Notas/midia/d8/paisagem-m.png">
+                
+                    <!-- Imagem padrão para outras resoluções -->
+                    <img style="width: 100%;" src="../Notas/midia/d8/paisagem-g.png" alt="foto-paisagem-grande">
+                </picture>
+             </div>
+ 
+             <div class="contorno">
+                 <h4>Proposta:</h4>
+                 <p>Mostre uma imagem mais estreita quando a janela do navegador estiver muito pequena. Porém, quando o usuário aumentar a janela, as imagens serão subistituidas automáticamente por uma maior, usando apenas HTML e CSS.</p>
+             </div> <br>
+             <p class="voltar"><a href="#menu"> &#9650; Voltar ao Menu</a></p>
+         </section>
+        <!--FIM DO DESAFIO-------------------------------------------------------------- -->
 
-            <p>Então é isso! Espero que você tenha gostado do nosso artigo com essa curiosidade sobre o sistema Android e seu simpático mascote.</p>
-        </article>
+<hr>
+        <!--INÍCIO DESAFIO 08 MÓDULO 01------------------------------------------------- -->
+        <section class="descri" id="ass8">
+            <ul type="circle">
+                <li>
+                    <h3>Desafio 008 - Módulo 01</h3>
+                </li>
+            </ul>
+             <div class="fundex">
+                 <h4>Desafio da Navegação</h4>
+                 <p>Esta é a página principal, o índice do seu site. A partir dela você pode acessar outras áreas principais através dos links a seguir:</p> <br>
+                 <ul><li><a href="pverde.html">Acessar a área verde</a></li>
+                    <li><a href="pamarela.html">Acessar a área amarela</a></li>
+                </ul>
+             </div>
+ 
+             <div class="contorno">
+                 <h4>Proposta:</h4>
+                 <p>Criar navegação entra as páginas. Criar uma página simples, que está representada por um título, um parágrafo e dois links. Um para a página verde e outro para a página amarela.</p>
+             </div> <br>
+             <p class="voltar"><a href="#menu"> &#9650; Voltar ao Menu</a></p>
+         </section>
+        <!--FIM DO DESAFIO-------------------------------------------------------------- -->
+<hr>
+
+        <!--INÍCIO DESAFIO 09 MÓDULO 01------------------------------------------------- -->
+        <section class="descri" id="ass9">
+            <ul type="circle">
+                <li>
+                    <h3>Desafio 009 - Módulo 01</h3>
+                </li>
+            </ul>
+             <div class="fundex" id="ivideos">
+                <h4 style="text-align: left;">Desafio Seus Vídeos Favofitos</h4>
+                <p style="font-size: 1em;" id="tvid">Vídeos legais para assistir</p>
+                 <br>
+                 <a href="phtml.html"><img src="../Notas/midia/d9/thumb-html.png" alt=""></a>
+                 <a href="pjs.html"><img src="../Notas/midia/d9/thumb-js.png" alt=""></a> <br>
+                 <a href="phardware.html"><img src="../Notas/midia/d9/thumb-hardware.png" alt=""></a>
+                 <a href="ppython.html"><img src="../Notas/midia/d9/thumb-python.png" alt=""></a>
+             </div>
+ 
+             <div class="contorno">
+                 <h4>Proposta:</h4>
+                 <p>Criar um site onde você possa indicar quatro vídeos legais para seus visitantes acessarem.Essa é a página inicial.</p>
+             </div> <br>
+             <p class="voltar"><a href="#menu"> &#9650; Voltar ao Menu</a></p>
+         </section>
+        <!--FIM DO DESAFIO-------------------------------------------------------------- -->
+
+<hr>
+
+
+
+        <!--INÍCIO DESAFIO 01 MÓDULO 02------------------------------------------------- -->
+        <section class="descri2" id="ass11">
+            <ul type="circle">
+                <li>
+                    <h3>Desafio 001 - Módulo 02</h3>
+                </li>
+            </ul>
+             <div class="fundex">
+                 <h4>Desafio Site do Android</h4>
+                 <a href=""></a>
+                 <iframe src="https://ollivercosta.github.io/projeto-android/" frameborder="0"></iframe>
+             </div>
+ 
+             <div class="contorno">
+                 <h4>Proposta:</h4>
+                 <p>Criar uma página contendo Cabeçalho, Corpo e Rodapé. A página também deve conter imagens responsivas, vídeo e uma lista. Os links devem abrir a página em outra guia.</p>
+             </div> <br>
+             <p class="voltar"><a href="#menu"> &#9650; Voltar ao Menu</a></p>
+         </section>
+        <!--FIM DO DESAFIO-------------------------------------------------------------- -->
+<hr>
+
+        <!--INÍCIO DESAFIO 02 MÓDULO 02------------------------------------------------- -->
+        <section class="descri2" id="ass12">
+            <ul type="circle">
+                <li>
+                    <h3>Desafio 002 - Módulo 02</h3>
+                </li>
+            </ul>
+             <div class="fundex">
+                 <h4>Desafio do Astronauta</h4>
+                 <a href=""></a>
+                 <iframe src="espaço.html" frameborder="0"></iframe>
+             </div>
+ 
+             <div class="contorno">
+                 <h4>Proposta:</h4>
+                 <p>Criar uma página contendo duas imagens, uma de background, utilizando a imagem do espaço e a segunda imagem sobrepondo a primeira, com a imagem do astronalta. A imagem do astronalta deve permanecer centralizada.</p>
+             </div> <br>
+             <p class="voltar"><a href="#menu"> &#9650; Voltar ao Menu</a></p>
+         </section>
+        <!--FIM DO DESAFIO-------------------------------------------------------------- -->
+
+<hr>
+        <!--INÍCIO DESAFIO 03 MÓDULO 02------------------------------------------------- -->
+        <section class="descri2" id="ass13">
+            <ul type="circle">
+                <li>
+                    <h3>Desafio 003 - Módulo 02</h3>
+                </li>
+            </ul>
+             <div class="fundex">
+                 <h4>Desafio Site do Cordel</h4>
+                 <a href=""></a>
+                 <iframe src="https://ollivercosta.github.io/desafio/" frameborder="0"></iframe>
+             </div>
+ 
+             <div class="contorno">
+                 <h4>Proposta:</h4>
+                 <p>Criar uma página contendo Cabeçalho, Corpo e Rodapé. A página também deve conter imagens com efeito paralax, conter um texto "cordel", e links externos.</p>
+             </div> <br>
+             <p class="voltar"><a href="#menu"> &#9650; Voltar ao Menu</a></p>
+         </section>
+        <!--FIM DO DESAFIO-------------------------------------------------------------- -->
+<hr>
+
+        <!--INÍCIO DESAFIO 01 MÓDULO 04------------------------------------------------- -->
+        <section class="descri4" id="ass14">
+            <ul type="circle">
+                <li>
+                    <h3>Desafio 001 - Módulo 02</h3>
+                </li>
+            </ul>
+             <div class="fundex">
+                 <h4>Desafio Redes Sociais</h4>
+                 <a href=""></a>
+                 <iframe src="https://ollivercosta.github.io/projeto-redes/" frameborder="0"></iframe>
+             </div>
+ 
+             <div class="contorno">
+                 <h4>Proposta:</h4>
+                 <p>Criar uma página contendo as redes sociais. A página deve ter uma imagem centralizada (celular) e ao lado da página os botões das redes sociais. O intuito é, quando clicar na rede social, a imagem do celular mude conforme a rede social clicada.</p>
+             </div> <br>
+             <p class="voltar"><a href="#menu"> &#9650; Voltar ao Menu</a></p>
+         </section>
+        <!--FIM DO DESAFIO-------------------------------------------------------------- -->
+<hr>
+
+       
+        
+
     </main>
+
     <footer>
-        <p>Site criado por <a href="gustavoguanabara.github.oi" target="_blank">Gustavo Guanabara</a> para o <a href="https://www.youtube.com/cursoemvideo" target="_blank">CursoemVideo</a>.</p>
+
     </footer>
+    
 </body>
 </html>
-
