@@ -23,7 +23,7 @@
     }
     25%, 75% {
       opacity: 0;
-    }
+    } 
   }
 
   .piscante {
@@ -129,11 +129,11 @@ hr {
 
 
 .fundex {
-    background-color: rgba(253, 253, 255, 0.966);
+    background-color: rgba(253, 253, 255, 0.568);
     border: 1px solid rgb(235, 233, 233);
     padding: 20px;
     border-radius: 10px 10px 0px 0px ;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     
 }
 
@@ -149,7 +149,7 @@ hr {
     padding: 10px;
     border-radius: 0px 0px 10px 10px ;
     color: white;
-    
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.205);
     
 }
 
